@@ -1,10 +1,48 @@
 import React, { Component } from 'react';
+import { Grid, Cell} from 'react-mdl';
 
 class Ladingpage extends Component {
 	render() {
 		return(
-			<div>
-				<h1>Ladingpage Component</h1>
+			<div style={{ width: '100%', margin:'auto'}}>
+				<Grid className="lading-grid">
+					<Cell col={12}>
+						<img 
+							src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRn7T9W-rOPBsjYxw5U018Vdtd1H3UrPtF5tMK6Ssr7LDSSWCGfsA"
+							alt="avatar"
+							className="avatar-img"
+						/>
+						<div className="banner-text">
+							<h1>Full Stack Web Developer </h1>
+
+							<hr />
+							<p>HTML/CSS Bootstrap JavaScript React React Native NodeJS Express MongoDB Laravel</p>
+
+							<div className="social-links">
+								{/* LinkedIn */}	
+								<a href="http://google.com" rel="noopener noreferrer" target="_blank">
+									<i className="fa fa-linkedin-square"  aria-hidden="true" />
+								</a>
+
+									{/* Gihtub */}	
+								<a href="http://google.com" rel="noopener noreferrer" target="_blank">
+									<i className="fa fa-github-square"  aria-hidden="true" />
+								</a>
+
+									{/* Freecodecamp */}	
+								<a href="http://google.com" rel="noopener noreferrer" target="_blank">
+									<i className="fa fa-free-code-camp"  aria-hidden="true" />
+								</a>
+
+									{/* Youtube */}	
+								<a href="http://google.com" rel="noopener noreferrer" target="_blank">
+									<i className="fa fa-youtube-square"  aria-hidden="true" />
+								</a>
+
+							</div>
+						</div>
+					</Cell>
+				</Grid>
 			</div>
 		) 
 	}
