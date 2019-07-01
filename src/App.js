@@ -22,15 +22,16 @@ function App() {
           </Header>
           <Drawer title="Title">
               <Navigation>
-               <Link to="/resume">Resume</Link>
+                  <Link to="/resume">Resume</Link>
                   <Link to="/aboutme">About Me</Link>
                   <Link to="/projects">Projects</Link>
                   <Link to="/contact">Contact</Link>
               </Navigation>
           </Drawer>
           <Content>
-              <div className="page-content" />
-              <Main />
+              <div className="page-content">
+                <Main />
+              </div>  
           </Content>
       </Layout>
   </div>
